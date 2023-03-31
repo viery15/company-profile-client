@@ -1,11 +1,11 @@
 <template>
-  <div class="sidebar" :class="{ collapsed: isCollapsed }">
+  <div class="sidebar" :class="{ collapsed: sideBar.isCollapsed }">
     <div class="row mb-3">
       <div class="col text-left">
         <button
           class="navbar-toggler"
           type="button"
-          @click="isCollapsed = !isCollapsed"
+          @click="clickSideBar"
         >
           <font-awesome-icon :icon="['fas', 'bars']" class="icon alt" />
         </button>
@@ -17,7 +17,7 @@
         <button
           class="navbar-toggler"
           type="button"
-          @click="isCollapsed = !isCollapsed"
+          @click="sideBar.isCollapsed"
         >
           <img src="/logo.png" alt="My Image" />
         </button>
@@ -49,12 +49,28 @@
 <script>
 export default {
   name: 'SideBar',
+  props: {
+    sideBar: {
+      type: Object,
+      required: true,
+    },
+    onSideBarClick: {
+      type: Function,
+      required: true,
+    },
+  },
 
   data() {
     return {
       isCollapsed: false,
     }
   },
+
+  methods: {
+    clickSideBar(){
+      this.onSideBarClick();
+    }
+  }
 }
 </script>
 
@@ -71,7 +87,7 @@ export default {
   background-color: #f8f9fa;
   overflow-x: hidden;
   overflow-y: auto;
-  transition: all 0.3s ease-in-out;
+  transition: all 1s;
 
   ul {
     margin-top: 20px;
@@ -101,19 +117,10 @@ export default {
 }
 
 .sidebar-menu {
-  // width: 100%;
-  // height: 100%;
-  // position: fixed;
-  // top: 56px;
-  // left: 0;
-  // padding-top: 15px;
-  // background-color: #f7f7f7;
-  // overflow-y: auto;
   transition: all 1s;
 }
 
 .sidebar.collapsed {
-  // width: 56px;
   padding: 0;
   width: 0;
 }

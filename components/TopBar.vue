@@ -1,45 +1,40 @@
 <template>
-  <topbar>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
-        <!-- <img src="~/assets/images/company-logo.png" alt="Company Logo" /> -->
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="navbarNav" class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </topbar>
+  <nav class="navbar" style="background-color: #a39161">
+    <a class="btn navbar-brand" href="#" @click="clickSideBar">
+      <font-awesome-icon :icon="['fas', 'bars']" class="icon alt" />
+    </a>
+    <div id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" style="background-color: white">
+          <a
+            class="nav-link"
+            href="https://staahmax.staah.net/be/indexpackdetail?propertyId=MzkyMg==&individual=true"
+            target="_blank"
+            >Book Now</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
 </template>
 
 <script>
 export default {
   name: 'TopBar',
+  props: {
+    sideBar: {
+      type: Object,
+      required: true,
+    },
+    onSideBarClick: {
+      type: Function,
+      required: true,
+    },
+  },
+  methods: {
+    clickSideBar() {
+      this.onSideBarClick()
+    },
+  },
 }
 </script>
