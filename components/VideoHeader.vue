@@ -6,7 +6,7 @@
     >
       <div class="row mt-3">
         <div class="col text-center">
-          <img src="/logo.png" alt="My Image" />
+          <img src="/logo.png" alt="Logo" />
         </div>
       </div>
     </video-background>

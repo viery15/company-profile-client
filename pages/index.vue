@@ -3,6 +3,7 @@
     <TopBar :side-bar="sideBar" :on-side-bar-click="onSideBarClick" />
     <SideBar :side-bar="sideBar" :on-side-bar-click="onSideBarClick" />
     <VideoHeader />
+    <HomeContent />
     <main class="container"></main>
   </div>
 </template>

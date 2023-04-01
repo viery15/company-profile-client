@@ -20,6 +20,7 @@ export default {
 
   plugins: [
     '~/plugins/fontawesome.js',
+    '~/plugins/slider.js',
     {
       src: '~/plugins/video-player.js',
       ssr: false
