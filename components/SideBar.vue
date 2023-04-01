@@ -30,16 +30,22 @@
           <nuxt-link class="nav-link" to="/">Home</nuxt-link>
         </li>
         <li class="nav-item">
-          <nuxt-link class="nav-link" to="/about">About</nuxt-link>
+          <nuxt-link class="nav-link" to="/about">About Us</nuxt-link>
         </li>
         <li class="nav-item">
-          <nuxt-link class="nav-link" to="/services">Services</nuxt-link>
+          <nuxt-link class="nav-link" to="/services">Taman Dayu Golf</nuxt-link>
         </li>
         <li class="nav-item">
-          <nuxt-link class="nav-link" to="/team">Team</nuxt-link>
+          <nuxt-link class="nav-link" to="/team">The Resorts</nuxt-link>
         </li>
         <li class="nav-item">
-          <nuxt-link class="nav-link" to="/contact">Contact</nuxt-link>
+          <nuxt-link class="nav-link" to="/contact">2023 Rates</nuxt-link>
+        </li>
+        <li class="nav-item">
+          <nuxt-link class="nav-link" to="/contact">News & Events</nuxt-link>
+        </li>
+        <li class="nav-item">
+          <nuxt-link class="nav-link" to="/contact">Promotions</nuxt-link>
         </li>
       </ul>
     </div>
