@@ -19,7 +19,11 @@ export default {
   ],
 
   plugins: [
-    '~/plugins/fontawesome.js'
+    '~/plugins/fontawesome.js',
+    {
+      src: '~/plugins/video-player.js',
+      ssr: false
+    }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
