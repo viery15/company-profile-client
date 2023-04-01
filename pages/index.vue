@@ -4,7 +4,7 @@
     <SideBar :side-bar="sideBar" :on-side-bar-click="onSideBarClick" />
     <VideoHeader />
     <HomeContent />
-    <main class="container"></main>
+    <MainFooter />
   </div>
 </template>
 <script>
