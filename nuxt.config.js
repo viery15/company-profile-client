@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'company-profile-client',
+    title: 'Best Golf Course and Luxury Hotel',
     htmlAttrs: {
       lang: 'en',
     },

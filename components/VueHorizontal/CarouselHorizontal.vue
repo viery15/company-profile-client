@@ -2,7 +2,7 @@
   <div>
     <header>
       <div class="header">
-        <h1>Event & News</h1>
+        <h1>Events & News</h1>
       </div>
     </header>
 
